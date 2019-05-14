@@ -1,6 +1,6 @@
 # Dockerised Shiny
 
-Basic structure for running shiny in Docker as aminimal example. It is assumes you have docker installed. 
+Basic minimal example for running shiny in Docker. It is assumed you have Docker installed. 
 
 ## Structure  
 
