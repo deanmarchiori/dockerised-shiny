@@ -64,20 +64,21 @@ EXPOSE 80
 CMD ["/usr/bin/shiny-server.sh"] 
 
 ```
-
+## Build  
 To build the Docker image (called `myapp`)  
 
 ```
 docker build -t myapp .
 ```
 
+## Run  
 To run a container based on our Docker image:  
 
 ```
 docker run --rm -p 80:80 myapp
 ```
 
-Hosted at: 
+## Use  
 
 http://127.0.0.1/myapp/
 
