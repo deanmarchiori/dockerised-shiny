@@ -112,7 +112,7 @@ docker save -o ~/myapp.tar myapp
 ## Load and Run Archive  
 
 ```
-docker load -i muapp.tar
+docker load -i myapp.tar
 docker run myapp
 ```
 
