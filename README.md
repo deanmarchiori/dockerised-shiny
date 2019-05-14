@@ -1,4 +1,4 @@
-# dockerised-shiny
+# Dockerised Shiny
 
 Basic example of running shiny in Docker. It is assumed you have docker installed. 
 
@@ -71,7 +71,7 @@ To build the Docker image (called `myapp`)
 docker build -t myapp .
 ```
 
-To run a contained based on our Docker image:  
+To run a container based on our Docker image:  
 
 ```
 sudo docker run --rm -p 80:80 myapp
@@ -100,4 +100,8 @@ sudo docker ps -a
 
 ```
 docker system prune - a
-```
+```  
+
+## More info  
+https://hub.docker.com/r/rocker/shiny    
+https://www.docker.com/get-started
