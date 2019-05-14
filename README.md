@@ -103,6 +103,20 @@ docker ps -a
 docker system prune - a
 ```  
 
-## More info  
+## Save as tar-archive  
+
+```
+docker save -o ~/myapp.tar myapp
+``` 
+
+## Load and Run Archive  
+
+```
+docker load -i muapp.tar
+docker run myapp
+```
+
+## More info and References
 https://hub.docker.com/r/rocker/shiny    
-https://www.docker.com/get-started
+https://www.docker.com/get-started  
+https://www.bjoern-hartmann.de/post/learn-how-to-dockerize-a-shinyapp-in-7-steps/
