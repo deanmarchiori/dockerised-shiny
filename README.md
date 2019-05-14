@@ -74,7 +74,7 @@ docker build -t myapp .
 To run a container based on our Docker image:  
 
 ```
-sudo docker run --rm -p 80:80 myapp
+docker run --rm -p 80:80 myapp
 ```
 
 Hosted at: 
@@ -87,13 +87,13 @@ http://127.0.0.1/myapp/
 ### List Images  
 
 ```
-sudo docker images 
+docker images 
 ```
 
 ### List All Containers
 
 ```
-sudo docker ps -a
+docker ps -a
 ```
 
 ### System Prune
