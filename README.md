@@ -100,7 +100,7 @@ docker ps -a
 ### System Prune
 
 ```
-docker system prune - a
+docker system prune -a
 ```  
 
 ## Save as tar-archive  
