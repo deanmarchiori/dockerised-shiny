@@ -1,31 +1,3 @@
-# dockerised-shiny
-
-Basic example of running shiny in Docker. It is assumed you have docker installed. 
-
-## Structure  
-
-Our directory contains a folder called `myapp` which contains our shiny app
-file and other supporting files. 
-
-At the top level we have our dockerfile and other config files. These should
-be modified accordingly.
-
-```
-dockerised-shiny/
-├── Dockerfile
-├── myapp
-│   └── app.R
-├── README.md
-├── shiny-server.conf
-└── shiny-server.sh
-
-```
-
-### Dockerfile   
-
-This should be adapted as required. 
-
-```
 # Using rocker/rver::version, update version as appropriate
 FROM rocker/r-ver:3.5.0
 
@@ -63,41 +35,4 @@ EXPOSE 80
 
 CMD ["/usr/bin/shiny-server.sh"] 
 
-```
 
-To build the Docker image (called `myapp`)  
-
-```
-docker build -t myapp .
-```
-
-To run a contained based on our Docker image:  
-
-```
-sudo docker run --rm -p 80:80 myapp
-```
-
-Hosted at: 
-
-http://127.0.0.1/myapp/
-
-
-## Some helpful commands
-
-### List Images  
-
-```
-sudo docker images 
-```
-
-### List All Containers
-
-```
-sudo docker ps -a
-```
-
-### System Prune
-
-```
-docker system prune - a
-```
