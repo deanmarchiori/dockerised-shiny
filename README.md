@@ -74,10 +74,13 @@ docker build -t myapp .
 ```
 
 ## Run  
-To run a container based on our Docker image:  
+To run a container based on our Docker image:    
+
+This will run the docker image 'myapp' in a container (in detached mode) and expose post 80. It will
+name it 'myapp' and remove it when exited. 
 
 ```
-docker run --rm -p 80:80 -d myapp
+docker run --rm -p 80:80 --name myapp -d myapp
 ```
 
 ## Use  
