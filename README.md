@@ -96,8 +96,21 @@ docker images
 ```
 docker ps -a
 ```
+### Remove Containers  
+
+For individual containers add the container ID
+```
+$ docker rm
+```  
+To remove all exited containers :  
+
+```
+$ docker rm $(docker ps -a -q -f status=exited)
+```
 
 ### System Prune
+
+Remove all unused containers, networks, images (both dangling and unreferenced), and optionally, volumes.  
 
 ```
 docker system prune -a
