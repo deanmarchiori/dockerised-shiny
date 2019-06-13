@@ -37,7 +37,9 @@ RUN apt-get update && apt-get install -y \
     pandoc-citeproc \
     libcurl4-gnutls-dev \
     libcairo2-dev \
-    libxt-dev \
+    libxt-dev \  
+    libxml2-dev \  
+    libssl-dev \  
     wget
 
 
@@ -75,7 +77,7 @@ docker build -t myapp .
 To run a container based on our Docker image:  
 
 ```
-docker run --rm -p 80:80 myapp
+docker run --rm -p 80:80 -d myapp
 ```
 
 ## Use  
